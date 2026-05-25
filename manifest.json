@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Age of Comic Sans: Persistent Edition",
+  "version": "1.0.0",
+  "description": "Locally forces Comic Sans font on Google Gemini pages.",
+  "content_scripts": [
+    {
+      "matches": ["https://gemini.google.com/*"],
+      "css": ["style.css"],
+      "run_at": "document_start"
+    }
+  ]
+}
