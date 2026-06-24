@@ -4,10 +4,10 @@
 }
 
 /* Code blocks: Maple Mono NF with cv05, falling back to Consolas → Menlo → monospace */
-code, pre, .code-block-decoration, .code-block-decoration *,
-[class*="code-block"], [class*="code-block"] *,
-[class*="code-container"], [class*="code-container"] *,
-.code-example, .code-example * {
+code, pre, .code-block-decoration, .code-block-decoration *:not(mat-icon):not(.gem-icon):not([class*="icon"]):not([fonticon]),
+[class*="code-block"], [class*="code-block"] *:not(mat-icon):not(.gem-icon):not([class*="icon"]):not([fonticon]),
+[class*="code-container"], [class*="code-container"] *:not(mat-icon):not(.gem-icon):not([class*="icon"]):not([fonticon]),
+.code-example, .code-example *:not(mat-icon):not(.gem-icon):not([class*="icon"]):not([fonticon]) {
   font-family: "Maple Mono NF", Consolas, Menlo, monospace !important;
   font-variant-ligatures: contextual;
   font-feature-settings: "cv05" on;
