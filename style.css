@@ -1,3 +1,14 @@
+/* Body text: Comic Sans */
 .message-content, .model-response-text, p, span, textarea, input, h1, h2, h3, h4, h5, h6 {
   font-family: "Comic Sans MS", "Comic Sans", "Comic Neue", cursive !important;
+}
+
+/* Code blocks: Maple Mono NF with cv05, falling back to Consolas → Menlo → monospace */
+code, pre, .code-block-decoration, .code-block-decoration *,
+[class*="code-block"], [class*="code-block"] *,
+[class*="code-container"], [class*="code-container"] *,
+.code-example, .code-example * {
+  font-family: "Maple Mono NF", Consolas, Menlo, monospace !important;
+  font-variant-ligatures: contextual;
+  font-feature-settings: "cv05" on;
 }
